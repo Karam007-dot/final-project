@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Registration Form</title>
+  <title>Sign In</title>
   <style>
   
     body {
@@ -171,13 +171,13 @@ input[type="radio"] {
   <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="Products.html">Products</a></li>
-    <li><a href="become_affiliate.html">Become An Affiliate</a></li>
+    <li><a href="become_affiliate.html">Sign In</a></li>
     <li><a href="https://mail.google.com/mail/u/0/">Support</a></li>
-    <li><a href="https://www.whatsapp.com/?lang=en">Contact</a></li>
+    <li><a href="contact_us.html">Contact us</a></li>
   </ul>
 </nav>
   <div class="form-container">
-    <h2>Registration Form</h2>
+    <h2>Sign In</h2>
     <form id="registerForm">
       <label for="name">Full Name</label>
       <input type="text" id="name" name="name" required>
@@ -197,37 +197,10 @@ input[type="radio"] {
       <label for="dob">Date of Birth</label>
       <input type="date" id="dob" name="dob" required>
 
-      <div class="radio-group">
-        <label>account Type:</label><br>
-       <label>
-      <input type="radio" name="accountType" value="savings">Savings 
-      </label>
-       <label>
-      <input type="radio" name="accountType" value="checkings"> Checkings
-       </label>
-      <label>
-      <input type="radio" name="accountType" value="joint account"> Joint Account
-        </label>
-
-      </div>
+     
 
       
-  <p>Choose Currency:</p>
-
-  <label>
-    <input type="radio" name="currency" value="SAR"> SAR
-  </label>
-
-  <label>
-    <input type="radio" name="currency" value="USD"> USD
-  </label>
-
-  <label>
-    <input type="radio" name="currency" value="other" id="otherRadio"> Other
-  </label>
-
-  <input type="text" id="otherText" name="otherCurrency" placeholder="Specify currency" disabled>
-
+  
 
 <style>
   label {
@@ -245,23 +218,7 @@ input[type="radio"] {
   }
 </style>
 
-<script>
-  const otherRadio = document.getElementById('otherRadio');
-  const otherText = document.getElementById('otherText');
 
-  const radios = document.querySelectorAll('input[name="currency"]');
-  radios.forEach(radio => {
-    radio.addEventListener('change', () => {
-      if (otherRadio.checked) {
-        otherText.disabled = false;
-        otherText.focus();
-      } else {
-        otherText.disabled = true;
-        otherText.value = '';
-      }
-    });
-  });
-</script>
 
 
       <label for="gender"> Gender</label>
@@ -272,16 +229,7 @@ input[type="radio"] {
         <option>Other </option>
       </select>
 
- <label for="id number">ID Number</label>
-      <input type="text" id="" name="id number" required>
-
-       <label for="idType">ID Type</label>
-<select id="idType" name="idType" required>
-  <option value="" disabled selected>Choose ID Type</option>
-  <option value="passport">Passport</option>
-  <option value="national">National ID</option>
-  <option value="driver">Driver's License</option>
-</select>
+ 
 
 
       <div class="buttons">
